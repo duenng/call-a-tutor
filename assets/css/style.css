@@ -1,0 +1,3016 @@
+/********************************************************** */
+/************************  CoEdu ************************* */
+/**********************************************************
+
+    TABLE OF CONTENT
+    ========================
+
+    01. Default CSS
+    02. Slider Section
+    03. Page Banner
+    04. Services Section
+    05. About Us
+    06. Our Mission
+    07. Featured Section
+    08. Courses Section
+    09. Course Details
+    10. Success Section
+    11. Project Section
+    12. Feedback Section
+    13. News Section
+    14. News Page
+    15. Blog Details
+    16. Contact Page
+    17. Teacher Section
+    18. Teacher Details
+    19. Education History
+    20. Footer Section
+    21. Slider Two
+    22. Service Two
+    23. About Two
+    24. Courses Two
+    25. Newsletter Section
+    26. Featured Services Two
+    27. Video Two
+    28. Feedback Two
+    29. News Two
+    30. Footer Two
+    31. Slider Three
+    32. Service Three
+    33. About Three
+    34. Featured Three
+    35. Courses Three
+    36. Newsletter Three
+    37. Event Section
+    38. News Three
+    39. Footer Three
+    40. Hero Section
+    41. Services four
+    42. About us four
+    43. Why We Best
+    44. Admission Four
+    45. Event Four
+    46. Feedback Four
+    47. News Four
+    48. Hero Five
+    49. Services Five
+    50. About Five
+    51. Courses Five
+    52. Newsletter Five
+    53. Newsletter Five
+    54. News Three fo Five
+    55. Footer Five
+
+/********************************************************* */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500,600,800|Open+Sans&display=swap');
+/*font-family: 'Dosis', ;
+font-family: 'Open Sans', ;*/
+
+/* Import Stylesheets */
+@import url('https://use.fontawesome.com/releases/v5.9.0/css/all.css');
+@import url('bootstrap.min.css');
+@import url('magnific-popup.css');
+@import url('menu.css');
+@import url('slick.css');
+@import url('leaflet.css');
+@import url('flaticon.css');
+@import url('animate.min.css');
+@import url('flipping_gallery.css');
+@import url('spacing.min.css');
+
+/****************************************************** */
+/*******************  01. Default CSS ***************** */
+/****************************************************** */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+body {
+    color: #A9A9A9;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: 'Open Sans', sans-serif ;
+    overflow: auto;
+}
+
+a {
+    color: #FD7114;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #15C1E5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #222222;
+    line-height: 1.4;
+    font-family: 'Dosis', sans-serif;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #222222;
+}
+
+h2,
+h3 {
+    font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+.thin h2 {
+    font-weight: 600;
+}
+
+/*home page two and five*/
+.hp-two h1, .hp-five h1,
+.hp-two h2, .hp-five h2,
+.hp-two h3, .hp-five h3,
+.hp-two h4, .hp-five h4,
+.hp-two h5, .hp-five h5,
+.hp-two h6, .hp-five h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hp-two h1 {
+    font-size: 60px;
+}
+
+.hp-two h2 {
+    font-size: 36px;
+}
+
+.hp-two h4 a:hover {
+    color: #FE5A2C;
+}
+
+.hp-five h1 {
+    font-size: 70px;
+    line-height: 1.3;
+}
+
+.hp-five h2 {
+    font-size: 36px;
+    line-height: 1.55;
+}
+
+/*home page three and four*/
+body.hp-three, body.hp-four {
+    color: #8C8C8C;
+    font-family: 'Lora', serif;
+}
+
+.hp-three h1, .hp-four h1,
+.hp-three h2, .hp-four h2,
+.hp-three h3, .hp-four h3,
+.hp-three h4, .hp-four h4,
+.hp-three h5, .hp-four h5,
+.hp-three h6, .hp-four h6,
+.hp-three h4 a, .hp-four h4 a {
+    color: #010101;
+    font-family: 'Playfair Display', serif;
+}
+
+.hp-three h1 {
+    font-size: 58px;
+    line-height: 1.5;
+}
+
+.hp-four h1 {
+    font-size: 60px;
+    line-height: 1.5;
+}
+
+.hp-three h2, .hp-four h2 {
+    font-size: 36px;
+}
+
+.hp-four h1 span,
+.hp-four h2 span,
+.hp-three h4, .hp-four h4,
+.hp-three h5, .hp-four h5,
+.hp-three h6, .hp-four h6 {
+    font-weight: 400;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.page-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 300px;
+    overflow: hidden;
+}
+
+.page p {
+    line-height: 29px;
+}
+
+header:after,
+section:after,
+footer:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+/** Section Title style */
+.section-title .sub-title {
+    color: #15C1E5;
+    position: relative;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Dosis', sans-serif;
+}
+
+.section-title .sub-title:after {
+    content: '';
+    height: 1px;
+    width: 35px;
+    position: absolute;
+    background: #15C1E5;
+    left: calc(100% + 5px);
+    top: 55%;
+}
+
+.text-center .sub-title:after {
+    left: calc(50% - 17.5px);
+    top: 100%;
+}
+
+/*home five*/
+.hp-five .section-title .sub-title {
+    font-size: 14px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hp-five .section-title .sub-title:after {
+    height: 30px;
+    width: 30px;
+    left: 0;
+    top: 0;
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
+
+/** Button style */
+.theme-btn,
+a.theme-btn {
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 11px 30px;
+    background: #FD7114;
+    display: inline-block;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.theme-btn:hover,
+a.theme-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 30px #1965FD66;
+}
+
+.theme-btn.style-two,
+.hp-two .theme-btn.style-two {
+    background: transparent;
+    border: 1px solid;
+    padding: 10px 30px;
+}
+
+/*home two btn*/
+.hp-two .theme-btn {
+    background: #FE5A2C;
+}
+
+.hp-two .theme-btn:hover {
+    box-shadow: none;
+}
+
+/*home three btn*/
+.hp-three .theme-btn {
+    border-radius: 0;
+    background: #04004C;
+}
+
+.hp-three .theme-btn:hover {
+    box-shadow: none;
+}
+
+.hp-three .theme-btn.style-two {
+    color: #04004C;
+    background: transparent;
+}
+
+.theme-btn.thin {
+    font-weight: 400;
+}
+
+/*home four btn*/
+.hp-four .theme-btn {
+    background: #6059BB;
+    border-radius: 25px 25px 25px 0;
+}
+
+.hp-four .theme-btn:hover {
+    box-shadow: none;
+}
+
+.hp-four .theme-btn.style-two {
+    color: #04004C;
+    background: transparent;
+}
+
+/*home four btn*/
+.hp-five .theme-btn {
+    background: #15C1E5;
+    border-radius: 25px;
+}
+
+
+/** List Style One */
+.list-style-one li {
+    display: flex;
+    color: #222222;
+    font-weight: 600;
+    margin-bottom: 15px;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+.list-style-one li:before {
+    content: '';
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background: #15C1E5;
+}
+
+/** Social Link Style One */
+.social-style-one {
+    display: inline-block;
+}
+
+.social-style-one a {
+    height: 22px;
+    width: 22px;
+    margin: 0 4px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
+.social-style-one a:first-child,
+.social-style-two a:first-child {
+    margin-left: 0;
+}
+
+.social-style-one a:last-child,
+.social-style-two a:last-child {
+    margin-right: 0;
+}
+
+/** Social Link Style Two */
+.social-style-two a {
+    height: 30px;
+    width: 30px;
+    margin: 0 3px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #FD7114;
+}
+
+.social-style-two a:hover {
+    background: #FD7114;
+    color: #FFFFFF;
+}
+
+/*pazination style*/
+.pazination li {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.pazination li a {
+    width: 30px;
+    height: 30px;
+    color: #A9A9A9;
+    display: block;
+    font-size: 14px;
+    transition: 0.5s;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    background: #F4F4F4;
+}
+
+.pazination a:hover,
+.pazination li.active a {
+    color: #FFFFFF;
+    background: #fd7114;
+}
+
+/*** Preloader style ** */
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    background-color: #FFFFFF;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/preloader.gif);
+}
+
+/*** Scroll Top style ** */
+.scroll-top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 99;
+    display: none;
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    background: #fd7114;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+}
+
+/*** Home Two Scroll Top ** */
+.hp-two .scroll-top {
+    background: #FE5A2C;
+}
+
+/*** Home Three Scroll Top ** */
+.hp-three .scroll-top {
+    background: #1E1C60;
+}
+
+/*** Home Four Scroll Top ** */
+.hp-four .scroll-top {
+    background: #6f67d3;
+}
+
+/*** Home Five Scroll Top ** */
+.hp-five .scroll-top {
+    background: #15C1E5;
+}
+
+/* text inputs and testarea */
+input,
+.form-control {
+    width: 100%;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border: 1px solid #ECEBEE;
+}
+
+input::placeholder,
+.form-control::placeholder {
+    color: #A9A9A9;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ECEBEE;
+}
+
+/* input buttons */
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+    outline: none;
+}
+
+/*subscribe*/
+.subscribe {
+    position: relative;
+}
+.subscribe input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 0;
+    color: #A9A9A9;
+    width: 100%;
+}
+.subscribe input::placeholder {
+    color: #A9A9A9;
+    font-size: 14px;
+}
+.subscribe button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+    background: #FD7114;
+    border-radius: 0 5px 5px 0;
+}
+
+.hp-two .subscribe button {
+    background: #FE5A2C;
+}
+
+
+/*Overlay*/
+.overlay {
+    position: relative;
+}
+
+.overlay * {
+    position: relative;
+    z-index: 2;
+}
+
+.overlay:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+/*Border Radius*/
+.br-10 {
+    border-radius: 10px;
+}
+
+.br-20 {
+    border-radius: 20px;
+}
+
+.br-30 {
+    border-radius: 30px;
+}
+
+/*Width*/
+.w-10 {
+    width: 10%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+/** Background Color style */
+.color-blue {
+    color: #6059BB;
+}
+
+.color-orange {
+    color: #FD7114;
+}
+
+.color-cyan {
+    color: #15C1E5;
+}
+
+.color-red {
+    color: #FF3636;
+}
+
+.bg-blue {
+    background: #6059BB;
+}
+
+.bg-blue-three {
+    background: #04014D;
+}
+
+.bg-blue-four {
+    background: #6059BB;
+}
+
+.bg-orange {
+    background: #FD7114;
+}
+
+.bg-cyan {
+    background: #15C1E5;
+}
+
+.bg-black {
+    background: #252438;
+}
+
+.bg-black-five {
+    background: #01001D;
+}
+
+
+/****************************************************** */
+/****************** 02. Slider Section  *************** */
+/****************************************************** */
+.slider-section .slick-slide {
+    display: flex;
+    align-items: center;
+}
+
+.slider-single-item {
+    height: 100vh;
+    min-height: 600px;
+    padding-top: 50px;
+    text-align: center;
+    background-size: cover;
+    background: #1E168E;
+    position: relative;
+}
+
+.slider-single-item:after {
+    content: '';
+    position: absolute;
+    background: #1E168E;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.slider-single-item * {
+    position: relative;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+.slider-single-item h1 {
+    margin-bottom: 35px;
+    line-height: 1.1;
+}
+
+.slider-single-item p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.slider-btn .theme-btn {
+    margin: 8px;
+}
+
+/*slick dots*/
+.slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    width: 10px;
+    height: 10px;
+    text-indent: 20px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slick-dots .slick-active button {
+    background: #FD7114;
+}
+
+/*slider animation*/
+.slider-single-item.slick-slide * {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.slider-single-item.slick-active p,
+.slider-single-item.slick-active h1 {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.slider-single-item.slick-active h1 {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+.slider-single-item.slick-active p {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.slick-active .slider-btn .theme-btn:first-child {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-delay: 1.1s;
+    animation-delay: 1.1s;
+}
+
+.slick-active .slider-btn .theme-btn:last-child {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-delay: 1.1s;
+    animation-delay: 1.1s;
+}
+
+/****************************************************** */
+/******************** 03. Page Banner ***************** */
+/****************************************************** */
+.banner-section {
+    height: 550px;
+    position: relative;
+    background: url(../images/banner.png);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.banner-section:after {
+    content: '';
+    position: absolute;
+    background: #1E168E;
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.banner-inner {
+    padding-top: 135px;
+    position: relative;
+    z-index: 1;
+}
+
+.page-title {
+    color: #FFFFFF;
+    font-size: 55px;
+}
+
+.breadcrumb {
+    background: transparent;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.banner-inner nav {
+    display: inline-block;
+}
+
+.breadcrumb-item a {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.breadcrumb-item a:hover {
+    color: #15C1E5;
+}
+
+.breadcrumb-item.active {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Dosis', sans-serif;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #FFFFFF;
+    padding: 0 5px;
+}
+
+/****************************************************** */
+/**************** 04. Services Section  *************** */
+/****************************************************** */
+.service-item {
+    transition: 0.5s;
+    padding: 50px 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0px 20px 60px #6059BB12;
+}
+
+.service-item i {
+    width: 60px;
+    height: 60px;
+    color: #FFFFFF;
+    font-size: 28px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.service-item h4 {
+    margin-bottom: 20px;
+}
+
+.service-item p {
+    margin-bottom: 25px;
+}
+
+.service-item > a {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/****************************************************** */
+/**************** 05. About Us Section  *************** */
+/****************************************************** */
+.about-video {
+    position: relative;
+    display: inline-block;
+    border-radius: 5px 5px 25% 5px;
+    margin-bottom: -8%;
+    margin-right: 25%;
+    overflow: hidden;
+}
+
+.about-video:after,
+.about-video-inner:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #FD7114;
+    opacity: 0.55;
+}
+
+.video-play {
+    width: 60px;
+    height: 60px;
+    font-size: 23px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 0 rgba(255,255,255,.7);
+    -webkit-animation: pulse 2s infinite cubic-bezier(.66, 0, 0, 1);
+    animation: pulse 2s infinite cubic-bezier(.66, 0, 0, 1);
+}
+
+.video-play:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.42;
+    border-radius: 50%;
+    background: #FFFFFF;
+    transform: scale(1.3);
+    box-shadow: 0 0 0 0 rgba(255,255,255,.7);
+    -webkit-animation: pulse 1.75s infinite cubic-bezier(.66, 0, 0, 1);
+    animation: pulse 1.75s infinite cubic-bezier(.66, 0, 0, 1);
+}
+
+.video-play i {
+    margin-left: 5px;
+    position: relative;
+    z-index: 5;
+}
+
+.about-image {
+    display: inline-block;
+    position: relative;
+    margin-left: 13%;
+    margin-top: -40%;
+    z-index: -1;
+}
+
+.about-author-name span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/*about page video*/
+.about-video-inner {
+    position: relative;
+}
+
+.about-video-inner img {
+    min-height: 200px;
+}
+
+/*video play button animation*/
+@-webkit-keyframes pulse {
+    to {
+        box-shadow: 0 0 0 45px transparent
+    }
+}
+
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 45px transparent
+    }
+}
+/****************************************************** */
+/************** 06. Our Mission Section  ************** */
+/****************************************************** */
+.mission-content .sub-title,
+.mission-content * {
+    color: #FFFFFF;
+}
+
+.mission-content .sub-title:after {
+    background: #FFFFFF;
+}
+
+.mission-image {
+    margin-top: -200px;
+}
+
+/****************************************************** */
+/**************** 07. Featured Section  *************** */
+/****************************************************** */
+.featured-item,
+.featured-item i,
+.featured-item p {
+    transition: 0.5s;
+}
+
+.featured-item:hover {
+    background-color: #FD7114;
+    background-image: url('../images/featured-hover.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.featured-item:hover * {
+    color: #FFFFFF;
+}
+
+.featured-item:hover i {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/****************************************************** */
+/**************** 08. Courses Section  **************** */
+/****************************************************** */
+.course-item {
+    border-radius: 5px;
+    background: #FFFFFF;
+    margin-bottom: 30px;
+    box-shadow: 0px 20px 60px #6059BB11;
+}
+
+.course-image img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.course-content {
+    padding: 30px 30px 10px;
+}
+
+.course-content .age {
+    color: #FD7114;
+    font-weight: 500;
+    margin: 3px 0 8px;
+    display: inline-block;
+    font-family: 'Dosis', sans-serif;
+}
+
+/****************************************************** */
+/***************** 09. Course Details  **************** */
+/****************************************************** */
+/*course sidebar*/
+.course-widget {
+    border-radius: 5px;
+    border: 1px solid #ECEBEE;
+    margin-bottom: 50px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.c-widget-title {
+    color: #FFFFFF;
+    padding: 10px 0;
+    margin-top: -30px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.c-widget-title:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: calc(100% + 62px);
+    background: #15C1E5;
+    left: -31px;
+    top: 0;
+    z-index: -1;
+}
+
+.course-widget .list li {
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.course-widget .list li:last-child {
+    margin-bottom: 0;
+}
+
+.course-widget .list li span:first-child {
+    color: #222222;
+    font-weight: 500;
+}
+
+.course-widget .list li span:last-child {
+    margin-left: auto;
+}
+
+.course-widget .list li a {
+    color: #222222;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.course-widget .list li a:hover {
+    color: #FD7114;
+}
+
+/*course details content*/
+.course-details-content .accordion {
+    max-width: 600px;
+}
+
+.card {
+    border: none;
+    margin-bottom: 15px;
+}
+
+.card .card-header {
+    padding: 9px 30px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid #ECEBEE;
+}
+
+.card-header h5 button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: left;
+    background: transparent;
+}
+
+.card-header h5 i {
+    flex: none;
+    width: 30px;
+    height: 30px;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-left: auto;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    background: #FD7114;
+}
+
+.card-header h5 i:first-child {
+    display: none;
+}
+
+.card-header h5 .collapsed i:first-child {
+    display: block;
+}
+
+.card-header h5 i:last-child {
+    display: block;
+}
+
+.card-header h5 .collapsed i:last-child {
+    display: none;
+}
+
+.card-body {
+    padding: 10px 30px;
+}
+
+/****************************************************** */
+/**************** 10. Success Section  **************** */
+/****************************************************** */
+.success-section {
+    background: url(../images/success-bg.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.success-section:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #222222;
+    opacity: 0.85;
+}
+
+.success-section * {
+    color: #FFFFFF;
+    position: relative;
+    z-index: 2;
+}
+
+.success-section .sub-title {
+    color: #FFFFFF;
+}
+
+.success-section .sub-title:after {
+    background: #FFFFFF;
+}
+
+.success-box {
+    margin-bottom: 30px;
+}
+
+.count-text {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.count-text:after {
+    content: '+';
+}
+
+/****************************************************** */
+/**************** 11. Project Section  **************** */
+/****************************************************** */
+.project-filter li {
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 3px;
+    margin: 0 2px 10px;
+    padding: 8px 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.project-filter li:hover,
+.project-filter li.current {
+    color: #FFFFFF;
+    background: #FD7114;
+}
+
+.project-wrap .item {
+    padding-bottom: 30px;
+}
+
+.project-item {
+    border-radius: 5px;
+    position: relative;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(253, 113, 20, 0.5);
+    border-radius: 5px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.project-item:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay a {
+    height: 60px;
+    width: 60px;
+    font-size: 25px;
+    line-height: 60px;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+
+/****************************************************** */
+/*************** 12. Feedback Section  **************** */
+/****************************************************** */
+.feedback-single-item {
+    padding: 50px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 5px solid #EDEDED;
+    box-shadow: 0px 20px 60px #33325E0C;
+}
+
+.feedback-single-item:after {
+    content: "\f10b";
+    font-family: Flaticon;
+    position: absolute;
+    font-size: 70px;
+    color: #15C1E5;
+    opacity: 0.1;
+    z-index: -1;
+    left: 25px;
+    top: 45px;
+}
+
+.client-content p {
+    color: #222222;
+    font-size: 18px;
+    line-height: 32px;
+    font-style: italic;
+}
+
+.client-header {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.client-des {
+    display: flex;
+    align-items: center;
+}
+
+.client-des .image {
+    flex: none;
+    margin-right: 30px;
+}
+
+.client-details p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.feedback-navigation {
+    position: absolute;
+    bottom: 25px;
+    left: -60px;
+}
+
+.feedback-navigation a {
+    color: #FF8618;
+    opacity: 0.5;
+    font-size: 20px;
+}
+
+.feedback-navigation a:first-child {
+    margin-right: 5px;
+}
+
+.feedback-navigation a:hover {
+    opacity: 1;
+}
+
+.feedback-navigation a:focus {
+    opacity: 1;
+    font-size: 25px;
+}
+
+/****************************************************** */
+/****************** 13. News Section  ***************** */
+/****************************************************** */
+.news-single-item {
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0px 20px 60px #6059BB11;
+}
+
+.news-image {
+    position: relative;
+}
+
+.news-image img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.news-image .category {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #FFFFFF;
+    padding: 5px 12px;
+    border-radius: 5px 0 5px 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+.news-content {
+    padding: 30px;
+}
+
+.news-content .date {
+    color: #FD7114;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Dosis', sans-serif;
+}
+
+.news-content h4 {
+    max-width: 290px;
+    margin-bottom: 10px;
+}
+
+.news-author {
+    display: flex;
+    margin-top: 28px;
+    align-items: center;
+    border-left: 3px solid #FD7114;
+}
+
+.news-author img {
+    margin: 0 10px 0 15px;
+}
+
+.news-author h6 {
+    margin-bottom: 0;
+}
+
+/****************************************************** */
+/******************* 14. News Page  ******************* */
+/****************************************************** */
+.widget {
+    margin-bottom: 45px;
+}
+
+.widget:last-child {
+    margin-bottom: 0;
+}
+
+.widget-title {
+    margin-bottom: 25px;
+}
+
+/*search widget*/
+.widget_search form {
+    display: flex;
+}
+
+.widget_search input {
+    padding: 10px 25px;
+    margin-bottom: 0;
+}
+
+.widget_search button {
+    flex: none;
+    width: 50px;
+    height: 50px;
+    color: #FFFFFF;
+    cursor: pointer;
+    line-height: 50px;
+    background: #FD7114;
+    border-radius: 0 5px 5px 0;
+}
+
+/*Popular Post widget*/
+.widget-popular-post {
+    max-width: 330px;
+}
+
+.widget-post-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.widget-post-item:last-child {
+    margin-bottom: 0;
+}
+
+.widget-post-image {
+    flex: none;
+    width: 90px;
+    margin-right: 15px;
+}
+
+.widget-post-content .date {
+    color: #FD7114;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-family: 'Dosis', sans-serif;
+}
+
+.widget-post-content h5 {
+    margin: 0;
+}
+
+/*category widget*/
+.widget ul li {
+    margin-bottom: 10px;
+}
+
+.widget ul li:last-child {
+    margin-bottom: 0;
+}
+
+.widget ul li:before {
+    content: '\f101';
+    font-weight: 900;
+    margin-right: 10px;
+    font-family: 'Font Awesome 5 Free';
+}
+
+.widget ul li a {
+    color: #222222;
+    font-weight: 600;
+}
+
+.widget ul li a:hover {
+    color: #FD7114;
+}
+
+/*tag widget*/
+.tags a {
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 3px;
+    background: #FD7114;
+    margin: 0 5px 10px 0;
+    display: inline-block;
+}
+
+.tags a:hover {
+    background: #15c1e5;
+}
+
+/****************************************************** */
+/*************** 15. Blog Details Page  *************** */
+/****************************************************** */
+.blog-header {
+    margin: auto;
+    max-width: 866px;
+    text-align: center;
+}
+
+.details-author {
+    margin: auto;
+    display: flex;
+    max-width: 410px;
+    align-items: center;
+}
+
+.details-author .author-name {
+    margin: 0 15px;
+}
+
+.details-author .date {
+    margin-left: auto;
+}
+
+/*blog details content*/
+.blog-details-content {
+    position: relative;
+}
+
+.blog-container {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-container p {
+    margin-bottom: 25px;
+}
+
+.tags h4 {
+    margin-right: 22px;
+    display: inline-block;
+}
+
+/*blog quote*/
+.blog-quote {
+    max-width: 896px;
+    margin-right: 15%;
+    padding: 20px 0 10px 30px;
+    border-left: 5px solid #FD7114;
+}
+
+.blog-quote blockquote {
+    color: #282828;
+    font-size: 22px;
+    line-height: 39px;
+}
+
+.quote-athour {
+    width: 175px;
+    margin-left: auto;
+    margin-top: -30px;
+}
+
+.quote-athour i {
+    opacity: 0.3;
+    color: #FD7114;
+    font-size: 35px;
+    margin-right: 15px;
+}
+
+.quote-athour span {
+    color: #282828;
+    font-size: 14px;
+}
+
+/*blog comments*/
+.comment-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.comment-img {
+    flex: none;
+    width: 120px;
+    margin-right: 25px;
+}
+
+.replay-comment .comment-img {
+    width: 100px;
+}
+
+.replay-comment {
+    margin-left: 120px;
+}
+
+.comment-content .date {
+    float: right;
+    color: #222222;
+}
+
+.comment-content h6 {
+    margin-bottom: 15px;
+}
+
+.comment-content p {
+    margin-bottom: 15px;
+}
+
+.comment-content .replay {
+    color: #A9A9A9;
+    padding: 3px 20px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.comment-content .replay:hover {
+    color: #FD7114;
+}
+
+.comment-content .replay i {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+/****************************************************** */
+/****************** 16. Contact Page  ***************** */
+/****************************************************** */
+.contact-info ul li {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.contact-info ul li i {
+    height: 30px;
+    width: 30px;
+    background: #FD7114;
+    color: #FFFFFF;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+.info-content h5 {
+    margin-bottom: 10px;
+}
+
+.info-content span {
+    display: block;
+}
+
+/*contact map*/
+.map {
+    height: 680px;
+    border-radius: 5px;
+}
+
+.leaflet-bottom.leaflet-right {
+    display: none;
+}
+
+/****************************************************** */
+/**************** 17. Teacher Section  **************** */
+/****************************************************** */
+.teacher-item {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.teacher-image {
+    position: relative;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.teacher-overlay {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    border-radius: 50%;
+    transform: scale(0);
+    align-items: center;
+    justify-content: center;
+    background: rgba(253, 113, 20, 0.5);
+}
+
+.teacher-item:hover .teacher-overlay {
+    transform: scale(1);
+}
+
+.teacher-overlay a {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 60px;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+
+.teacher-description .post {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/****************************************************** */
+/**************** 18. Teacher Details  **************** */
+/****************************************************** */
+.section-title .post {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.teacher-skill-item {
+    margin-bottom: 50px;
+}
+
+.progress-content {
+    position: relative;
+}
+
+.progress-content h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    font-size: 36px;
+    font-weight: 500;
+    transform: translate(-50%, -50%);
+}
+
+.teacher-skill-item h4 {
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+/****************************************************** */
+/*************** 19. Education History  *************** */
+/****************************************************** */
+.history-box {
+    padding: 25px 20px 5px;
+}
+
+.history-box i,
+.history-box h4 {
+    margin-bottom: 15px;
+}
+
+/****************************************************** */
+/***************** 20. Footer Section  **************** */
+/****************************************************** */
+.footer-widget {
+    margin-bottom: 50px;
+}
+
+.footer-widget .footer-title {
+    margin-bottom: 30px;
+    color: #ffff;
+}
+
+/* logo-widget */
+.footer-logo {
+    position: relative;
+    margin: -10px 0 25px;
+}
+
+/*widget list*/
+.footer-widget .list li {
+    margin-bottom: 6px;
+}
+.footer-widget .list li a {
+    color: #FFFFFF;
+    font-family: 'Dosis', sans-serif;
+}
+
+.footer-widget .list li span {
+    width: 50%;
+    display: inline-block;
+}
+
+/*form widget*/
+.form-widget p {
+    margin-bottom: 30px;
+}
+
+/* copyright css */
+.copyright {
+    padding: 25px 15px 15px;
+    border-top: 1px solid #FFFFFF;
+}
+
+
+/****************************************************** */
+/******************* 21. Slider Two  ****************** */
+/****************************************************** */
+.slider-two .slider-single-item {
+    text-align: left;
+}
+
+.slider-two .slider-single-item:after {
+    background: #010009;
+    opacity: 0.59;
+}
+
+.slider-two h1 {
+    max-width: 606px;
+    line-height: 1.42;
+}
+
+.slider-two p {
+    max-width: 880px;
+}
+
+/*slider two animation*/
+.slider-two .slick-active .slider-btn .theme-btn {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    margin: 8px 15px 8px 0;
+}
+
+.slider-two .slick-active .theme-btn:last-child {
+    animation-delay: 1.25s;
+}
+
+/****************************************************** */
+/******************* 22. Service Two ****************** */
+/****************************************************** */
+.service-two .service-item i {
+    border-radius: 5px;
+    background: #FE5A2A;
+}
+
+.service-two .service-item {
+    box-shadow: none;
+    padding: 30px 30px 5px;
+    border: 1px solid #ECEBEE;
+}
+
+.service-two .service-item:hover {
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 20px 60px #6059BB12;
+}
+
+/****************************************************** */
+/******************** 23. About Two ******************* */
+/****************************************************** */
+.about-two-image {
+    max-width: 440px;
+    position: relative;
+}
+
+.about-two-image:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 100px;
+    bottom: 100px;
+    opacity: 0.05;
+    border-radius: 5px;
+    background: #FD7114;
+}
+
+/****************************************************** */
+/***************** 24. Courses Two  ******************* */
+/****************************************************** */
+.course-item-two {
+    transition: 0.5s;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border: 1px solid #ECEBEE;
+}
+
+.course-item-two:hover {
+    border-color: #FFFFFF;
+    box-shadow: 0px 20px 60px #6059BB11;
+}
+
+.course-image-two {
+    position: relative;
+}
+
+.course-image-two img {
+    width: 100%;
+}
+
+.course-two-seat {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 1px 22px;
+    background: #FE5A2C;
+    border-radius: 5px 0 0 0;
+}
+
+.course-content-two {
+    padding: 30px 30px 12px;
+}
+
+.course-content-two h6 {
+    color: #092ACE;
+    margin-bottom: 18px;
+}
+
+/****************************************************** */
+/*************** 25. Newsletter Section *************** */
+/****************************************************** */
+.newsletter-section {
+    background-size: cover;
+}
+
+.newsletter-section *,
+.newsletter-section h2 {
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-section:after {
+    background: #010009;
+    opacity: 0.56;
+}
+
+.newsletter-section .section-title {
+    max-width: 750px;
+}
+
+.newsletter-section .subscribe {
+    max-width: 500px;
+}
+
+.newsletter-section .subscribe button {
+    width: 125px;
+    font-size: 14px;
+}
+
+/****************************************************** */
+/************* 26. Featured Services Two ************** */
+/****************************************************** */
+.service-two .service-item > a {
+    margin-bottom: 25px;
+    display: inline-block;
+    color: #333146;
+}
+
+.service-two .service-item > a:hover {
+    color: #FE5A2C;
+}
+
+/****************************************************** */
+/******************** 27. Video Two ******************* */
+/****************************************************** */
+.video-two-image {
+    max-width: 535px;
+}
+
+.video-two-image:after {
+    background: #FE5A2C;
+    opacity: 0.15;
+    z-index: 3;
+}
+
+.video-two-image a {
+    color: #FE5A2C;
+}
+
+/****************************************************** */
+/****************** 28. Feedback Two ****************** */
+/****************************************************** */
+.feedback-two-wrap {
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+.feedback-two-item {
+    padding: 50px;
+    margin: 0 30px;
+    border-radius: 5px;
+    border: 1px solid #EBEAED;
+}
+
+.feedback-two-item > i {
+    color: #FE5A2C;
+    font-size: 40px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.feedback-two-item p {
+    color: #747280;
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.feedback-two-client {
+    display: flex;
+    margin-top: 45px;
+    align-items: center;
+}
+
+.feedback-two-client img {
+    flex: none;
+    width: 100px;
+    margin-right: 30px;
+}
+
+.feedback-two-ratings i {
+    color: #FE5A2C;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.feedback-two-wrap .slick-dots {
+    bottom: -80px;
+}
+
+.feedback-two-wrap .slick-dots button {
+    background: #FE5A2C;
+    opacity: 0.24;
+}
+
+.feedback-two-wrap .slick-dots .slick-active button {
+    opacity: 1;
+}
+
+/****************************************************** */
+/**************** 29. News Two Section **************** */
+/****************************************************** */
+.news-two-item {
+    transition: 0.5s;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border: 1px solid #ECEBEE;
+}
+
+.news-two-item:hover {
+    border-color: #FFFFFF;
+    box-shadow: 0px 20px 60px #6059BB11;
+}
+
+.news-two-img img {
+    width: 100%;
+}
+
+.news-two-content {
+    padding: 28px 30px 15px;
+}
+
+.news-two-content .date {
+    color: #FE5A2C;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.news-two-content h4 {
+    line-height: 34px;
+    margin-bottom: 12px;
+}
+
+/****************************************************** */
+/******************* 30. Footer Two ******************* */
+/****************************************************** */
+.footer-two {
+    position: relative;
+    background: url('../images/hp-two/footer.png');
+    background-size: cover;
+}
+
+.footer-two:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #252438;
+    opacity: 0.9;
+    left: 0;
+    top: 0;
+}
+
+.footer-two * {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-two .footer-widget .list li a {
+    font-family: 'Poppins', sans-serif;
+}
+
+/****************************************************** */
+/****************** 31. Slider Three ****************** */
+/****************************************************** */
+.slider-three-slides:after {
+    background: #010009;
+    opacity: 0.45;
+    z-index: 2;
+}
+
+.slider-three-content {
+    max-width: 555px;
+    margin-left: auto;
+}
+
+.slider-three-content h1 {
+    margin-bottom: 30px;
+}
+
+.slider-three-content h1 span {
+    font-weight: 400;
+}
+
+.slider-three-content p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.slider-three-slides img {
+    position: initial;
+}
+
+.slider-three-slides .slick-dots {
+    left: 80px;
+}
+
+.slider-three-slides .slick-dots .slick-active button {
+    background: #010101;
+}
+
+/****************************************************** */
+/******************* 32. Service Three ***************** */
+/****************************************************** */
+.service-three .service-item {
+    border-radius: 0;
+    padding: 30px 30px 10px;
+}
+
+.service-three .service-item i {
+    border-radius: 0;
+    background: #04014D;
+}
+
+/****************************************************** */
+/******************* 33. About Three ****************** */
+/****************************************************** */
+.about-three-img {
+    margin-top: 60px;
+    margin-left: 60px;
+    max-width: 477px;
+    position: relative;
+}
+
+.about-three-img:before {
+    content: '';
+    position: absolute;
+    height: 78%;
+    width: 78%;
+    border-radius: 50%;
+    background: #04014D;
+    opacity: 0.07;
+    z-index: -1;
+    left: -60px;
+    top: -60px;
+}
+
+.about-three-content {
+    margin-top: 60px;
+}
+
+/****************************************************** */
+/***************** 34. Featured Three ***************** */
+/****************************************************** */
+.featured-three a,
+.featured-three p,
+.featured-three h2,
+.featured-three h4 a {
+    color: #FFFFFF;
+}
+
+.featured-three .service-item {
+    border-radius: 5px;
+    background: #1E1C60;
+}
+
+.featured-three .service-item:hover {
+    background: #FFFFFF;
+}
+
+.featured-three .service-item i {
+    border-radius: 5px;
+}
+
+.service-three .service-item > a {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.featured-three .service-item:hover a,
+.featured-three .service-item:hover h4 a {
+    color: #010101;
+}
+
+.featured-three .service-item:hover p {
+    color: #8C8C8C;
+}
+
+/****************************************************** */
+/****************** 35. Courses Three ***************** */
+/****************************************************** */
+.course-three-item {
+    margin-bottom: 30px;
+    box-shadow: 0px 20px 60px #6059BB11;
+}
+
+.course-three-img img {
+    width: 100%;
+}
+
+.course-three-conten {
+    padding: 30px;
+}
+
+.course-three-conten h4 {
+    margin-bottom: 15px;
+}
+
+.course-three-conten h6 {
+    margin-bottom: 15px;
+    font-family: 'Lora', serif;
+}
+
+.course-three-conten h6 span {
+    color: #8C8C8C;
+    margin-left: 5px;
+}
+
+.course-three-conten .theme-btn {
+    padding: 6px 25px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+/****************************************************** */
+/**************** 36. Newsletter Three **************** */
+/****************************************************** */
+.newsletter-three .subscribe input {
+    color: #ECECEC;
+    border-radius: 0;
+    background: #1E1C60;
+    border-color: #1E1C60;
+}
+
+.newsletter-three .subscribe input::placeholder {
+    color: #ECECEC;
+    font-size: 14px;
+}
+
+.newsletter-three .subscribe button {
+    color: #04014D;
+    border-radius: 0;
+    background: #FFFFFF;
+}
+
+/****************************************************** */
+/****************** 37. Event Section ***************** */
+/****************************************************** */
+.event-single-item {
+    display: flex;
+    position: relative;
+    background: #D9D9E5;
+    margin-bottom: 30px;
+}
+
+.event-img,
+.event-date {
+    flex: none;
+    width: 18.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-img {
+    background-size: cover;
+}
+
+.event-content {
+    padding: 35px;
+    background: #ECECF1;
+}
+
+.event-content h4 {
+    margin-bottom: 20px;
+}
+
+.event-content p:last-child {
+    margin-bottom: 0;
+}
+
+.event-date span {
+    color: #010101;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+
+/****************************************************** */
+/**************** 38. News Three Section ************** */
+/****************************************************** */
+.new-three-item {
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 20px 60px #6059BB11;
+}
+
+.new-three-item h4 {
+    line-height: 34px;
+    margin-bottom: 10px;
+}
+
+.new-three-item p {
+    margin-bottom: 10px;
+}
+
+.new-three-item .date {
+    color: #010101;
+    font-size: 14px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.new-three-item img {
+    width: 100%;
+}
+
+/****************************************************** */
+/*************** 39. Footer Three Section ************* */
+/****************************************************** */
+.footer-three .footer-widget .list li a {
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-three .social-style-two a {
+    color: #FFFFFF;
+    margin-right: 10px;
+    border-color: #FFFFFF;
+}
+
+.footer-three .social-style-two a:hover {
+    color: #04014D;
+    background: #FFFFFF;
+}
+
+/****************************************************** */
+/****************** 40. Hero Section ****************** */
+/****************************************************** */
+.hero-content {
+    max-width: 555px;
+    margin-left: auto;
+}
+
+.hero-content h1 {
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img:last-child {
+    position: absolute;
+    width: calc(100% - 1px);
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+/****************************************************** */
+/****************** 41. Services four ***************** */
+/****************************************************** */
+.service-four .service-item {
+    box-shadow: none;
+    padding: 45px 30px;
+    border-radius: 0px 131px;
+    border: 1px solid #DDDDED;
+}
+
+.service-four .service-item i {
+    background: #6059BB;
+    margin-bottom: 15px;
+}
+
+.service-four .service-item h4 {
+    margin-bottom: 10px;
+}
+
+.service-four .service-item p {
+    margin-bottom: 0;
+}
+
+/****************************************************** */
+/****************** 42. About us four ***************** */
+/****************************************************** */
+.about-four-img-wrap {
+    position: relative;
+}
+
+.about-four-img {
+    max-width: 470px
+}
+
+.about-four-img:before {
+    position: absolute;
+    content: '';
+    height: 70%;
+    width: 45%;
+    background: #6059BB;
+    opacity: 0.1;
+    left: 0;
+    top: -100px;
+    z-index: -1;
+}
+
+/****************************************************** */
+/******************* 43. Why We Best ****************** */
+/****************************************************** */
+.ww-best-img {
+    position: relative;
+}
+
+.ww-best-img img {
+    width: 100%;
+}
+
+.principal-speech {
+    width: 80%;
+    color: #010101;
+    position: absolute;
+    background: #FFFFFF;
+    padding: 40px;
+    left: -65px;
+    bottom: 0;
+    box-shadow: 0px 20px 60px #6059BB11;
+    border-radius: 117px 117px 117px 0px;
+}
+
+.principal-des {
+    display: flex;
+    align-items: center;
+}
+
+.principal-des img {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.principal-des h5 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.principal-des span {
+    font-size: 14px;
+}
+
+/****************************************************** */
+/***************** 44. Admission Four ***************** */
+/****************************************************** */
+.admission-four-inner {
+    border-radius: 215px 215px 215px 0px;
+}
+
+.admission-four-inner h2,
+.admission-four-inner p {
+    color: #FFFFFF;
+}
+
+.admission-four-inner .theme-btn {
+    color: #04014D;
+    background: #FFFFFF;
+}
+
+/****************************************************** */
+/******************* 45. Event Four ******************* */
+/****************************************************** */
+.event-four-item {
+    background: #6059BB;
+    margin-bottom: 30px;
+    border-radius: 180px 180px 180px 0px;
+}
+
+.event-four-content {
+    padding: 30px;
+}
+
+.event-four-content h4,
+.event-four-content span {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.event-four-content h4 {
+    margin-bottom: 10px;
+}
+
+/****************************************************** */
+/****************** 46. Feedback Four ***************** */
+/****************************************************** */
+.feedback-four-wrap {
+    margin: auto;
+    max-width: 830px;
+}
+
+.feedback-four-wrap .slick-list {
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.slick-initialized .feedback-four-item {
+    margin: 50px;
+    display: flex;
+}
+
+.feedback-four-img {
+    flex: none;
+    width: 35%;
+    display: flex;
+    margin-right: 40px;
+    padding-left: 40px;
+    position: relative;
+    align-items: center;
+}
+
+.feedback-four-img:before {
+    content: '';
+    height: 155px;
+    width: 155px;
+    position: absolute;
+    border-radius: 50%;
+    background: #EDEDF5;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.feedback-four-content {
+    padding: 40px;
+    margin-bottom: 35px;
+    box-shadow: 0px 20px 60px #6059BB11;
+    border-radius: 114px 114px 114px 0px;
+}
+
+.feedback-four-content p {
+    color: #010101;
+    font-size: 18px;
+}
+
+.feedback-four-content h5 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.feedback-four-content span {
+    font-size: 14px;
+    color: #010101;
+}
+
+.feedback-four-wrap .slick-dots {
+    left: calc(30% + 105px);
+    bottom: 40px;
+}
+
+.feedback-four-wrap .slick-dots button {
+    background: #DFDFEF;
+}
+
+.feedback-four-wrap .slick-dots .slick-active button {
+    background: #6059BB;
+}
+
+.feedback-prev,
+.feedback-next {
+    color: #8E8EC3;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.5s;
+    position: absolute;
+    background: transparent;
+    right: 0;
+    bottom: 50px;
+    z-index: 10;
+}
+
+.feedback-prev:focus,
+.feedback-next:focus {
+    color: #6059BB;
+    font-size: 16px;
+}
+
+.feedback-prev {
+    right: 30px;
+}
+
+/****************************************************** */
+/******************** 47. News Four ******************* */
+/****************************************************** */
+.news-four-item {
+    margin-bottom: 30px;
+    border-radius: 0px 175px 0px 0px;
+    box-shadow: 0px 20px 60px #6059BB11;
+}
+
+.news-four-content {
+    padding: 30px;
+}
+
+.news-four-content .date {
+    color: #010101;
+    font-size: 14px;
+}
+
+/****************************************************** */
+/******************** 48. Hero Five ******************* */
+/****************************************************** */
+.hero-five {
+    height: 100vh;
+    display: flex;
+    min-height: 600px;
+    align-items: center;
+    background: url('../images/hp-five/hero.png');
+    background-size: cover;
+}
+
+.hero-five:after {
+    background: #01001D;
+    opacity: 0.66;
+}
+
+.hero-five * {
+    color: #FFFFFF;
+}
+
+.hero-five-content {
+    max-width: 700px;
+}
+
+.hero-five-content p {
+    font-size: 18px;
+    max-width: 560px;
+    line-height: 30px;
+    margin: 30px 0 50px;
+}
+
+.hero-five-content form {
+    display: flex;
+    max-width: 450px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.hero-five-content form input {
+    color: #8C8C8C;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 10px 25px;
+}
+
+.hero-five-content form button {
+    display: flex;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 25px;
+    background: #15C1E5;
+}
+
+.hero-five-content form button i {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+/****************************************************** */
+/****************** 49. Services Five ***************** */
+/****************************************************** */
+.service-five .service-item {
+    box-shadow: 0px 20px 60px #6059BB08;
+}
+
+.service-five .service-item:hover {
+    box-shadow: 0px 20px 60px #6059BB12;
+}
+
+.service-five .service-item i {
+    background: #15C1E5;
+}
+
+.service-five .service-item h4 {
+    margin-bottom: 10px;
+}
+
+.service-five .service-item > a {
+    color: #15C1E5;
+}
+
+/****************************************************** */
+/******************* 50. About Five ******************* */
+/****************************************************** */
+.about-video-five:after {
+    background: #01001D;
+    border-radius: 10px;
+    opacity: 0.15;
+    z-index: 2;
+}
+
+.about-video-five img {
+    width: 100%;
+}
+
+.about-five .section-title {
+    max-width: 360px;
+}
+
+.about-video-five a {
+    color: #15C1E5;
+}
+
+/****************************************************** */
+/****************** 51. Courses Five ****************** */
+/****************************************************** */
+.courses-filter {
+    text-align: center;
+}
+
+.courses-filter li {
+    color: #222222;
+    font-size: 18px;
+    transition: 0.5s;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 6px 18px;
+    margin: 0 2px 5px;
+    cursor: pointer;
+}
+
+.courses-filter li:hover,
+.courses-filter li.current {
+    color: #FFFFFF;
+    background: #15C1E5;
+}
+
+.course-item-five {
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 20px 60px #6059BB08;
+}
+
+.course-item-five:hover {
+    box-shadow: 0px 20px 60px #6059BB11;
+}
+
+.course-five-img {
+    position: relative;
+}
+
+.course-five-img img {
+    width: 100%;
+}
+
+.course-five-img .price {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 1px 20px;
+    background: #15C1E5;
+    border-radius: 10px 0 0 0;
+}
+
+.course-five-content {
+    padding: 25px 25px 5px;
+    border-bottom: 1px solid #ECEBEE;
+}
+
+.course-five-content h4 {
+    font-size: 20px;
+}
+
+.course-five-content h6 {
+    color: #010101;
+    font-weight: 400;
+}
+
+.course-five-content h6 span {
+    color: #8C8C8C;
+}
+
+.rat-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 25px 25px;
+}
+
+.rat-btn .ratting i {
+    color: #FFB520;
+    font-size: 10px;
+    margin-right: 1px;
+}
+
+.rat-btn .theme-btn {
+    padding: 6px 22px;
+    margin-left: auto;
+}
+
+.rat-btn .theme-btn:hover {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/****************************************************** */
+/***************** 52. Newsletter Five **************** */
+/****************************************************** */
+.newsletter-five:after {
+    background: #01001D;
+    opacity: 0.45;
+}
+
+.hp-five .subscribe {
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.hp-five .subscribe input {
+    padding-left: 25px;
+}
+
+.hp-five .subscribe button {
+    width: 125px;
+    font-size: 14px;
+    background: #15C1E5;
+}
+
+/****************************************************** */
+/***************** 53. Newsletter Five **************** */
+/****************************************************** */
+.feedback-navigation a {
+    color: #15C1E5;
+}
+
+/****************************************************** */
+/*************** 54. News Three fo Five ************** */
+/****************************************************** */
+.for-five .new-three-item {
+    border-radius: 10px;
+}
+
+.for-five .new-three-item h4 {
+    font-size: 20px;
+}
+
+/****************************************************** */
+/******************* 55. Footer Five ****************** */
+/****************************************************** */
+.footer-top {
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-five .subscribe {
+    max-width: 495px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-menu-social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-menu li {
+    display: inline-block;
+}
+
+.footer-menu li a {
+    color: #FFFFFF;
+    margin: 0 15px;
+}
+
+.footer-menu-social .social-style-two {
+    margin-left: auto;
+}
+
+.footer-menu-social .social-style-two a {
+    margin: 0 7px;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.footer-menu-social .social-style-two a:hover {
+    background: transparent;
+}
+
+.footer-menu li:first-child a,
+.footer-menu-social .social-style-two a:first-child {
+    margin-left: 0;
+}
+
+.footer-menu li:last-child a,
+.footer-menu-social .social-style-two a:last-child {
+    margin-right: 0;
+}
