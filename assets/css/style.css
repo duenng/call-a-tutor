@@ -3014,3 +3014,7 @@ input[type="submit"]:focus {
 .footer-menu-social .social-style-two a:last-child {
     margin-right: 0;
 }
+
+.justify-text {
+    text-align: justify;
+}
