@@ -130,7 +130,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-12">
-                        <div class="contact-content ml-10 rml-0">
+                        <div class="contact-content">
                             <div class="section-title mb-35">
                                <span class="sub-title">Contact Us</span>
                                 <h2>Have a Question?</h2>
@@ -138,35 +138,29 @@
                             <div class="row align-items-center justify-text">
                                 <div class="col-lg-10">
                                     <h4 class="mb-10">We are eager to hear from you, so please fill in an “Enquiry Form”.</h4>
-                                    <p>。A reply will be made within 48 hours.</p>
-                                    <p>。If you would prefer to speak directly to someone or make an appointment to come and meet us in person, please do not hesitate to telephone us on our office number:  +852 2572 8989</p>
-                                    <p>。If you have a most specific need or wish to forward a digital document to us, you could send an email to us:  anita@call-a-tutor.com</p>
+                                    <p>A reply will be made within 48 hours.</p>
                                 </div>
                             </div>
-                            <form action="POST">
+                            <form action="https://api.staticforms.xyz/submit" method="post">
                                 <div class="row col-lg-10 clearfix">
-                                    <div class="col-md-6">
+                                    <input type="hidden" name="accessKey" value="05fd5cb8-1f58-42a8-971f-8f931d1eece7">
+                                    <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="first_name" id="first_name" class="form-control" value="" required="" placeholder="First Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="last_name" id="first_name" class="form-control" value="" required="" placeholder="Last Name">
+                                            <input type="text" name="name" class="form-control" value="" required="" placeholder="Your Name">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="email" name="email" id="email" class="form-control" value="" required="" placeholder="Enter Your Email">
+                                            <input type="email" name="email" class="form-control" value="" required="" placeholder="Enter Your Email">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group mb-50">
-                                            <textarea name="message" id="message" class="form-control" rows="7" required="" placeholder="Message"></textarea>
+                                            <textarea name="message" class="form-control" rows="7" required="" placeholder="Message"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <button type="submit" class="theme-btn">COMMENT</button>
+                                        <button type="submit" class="theme-btn">SUBMIT</button>
                                     </div>
                                 </div>
                             </form>
@@ -179,7 +173,7 @@
                     <div class="col-lg-6">
                         <div class="contact-info rmb-50">
                             <div class="section-title mt-60 mb-35">
-                                <h2>Contact Us</h2>
+                                <h4>Or you can reach us through...</h4>
                             </div>
                             <ul>
                                 <li>
