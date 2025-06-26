@@ -837,7 +837,7 @@ input[type="submit"]:focus {
 .banner-section {
     height: 550px;
     position: relative;
-    background: url(../images/banner.png);
+    background: url(../images/index_banner.png);
     background-position: center center;
     background-size: cover;
     display: flex;

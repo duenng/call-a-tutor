@@ -16,14 +16,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-
+    <style>
+        /* Google Form container */
+        .google-form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 20px;
+        }
+        
+        .google-form-container iframe {
+            width: 100%;
+            height: 1500px; /* Adjust based on your form height */
+            border: none;
+        }
+        
+        /* Adjust height on mobile */
+        @media (max-width: 768px) {
+            .google-form-container iframe {
+                height: 1800px;
+            }
+        }
+        
+        /* Form note styling */
+        .form-note {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #4a90e2;
+        }
+    </style>
+    
 </head>
 
 <body>
     <div class="page-wrapper">
         <!-- Preloader -->
         <div class="preloader"></div>
-        
         <!--==================================================================== 
                                 Start Header area
         =====================================================================-->
@@ -32,15 +65,9 @@
             <div class="header-top bg-blue">
                 <div class="container d-flex align-items-center">
                     <div class="top-left">
-                        <a href="callto:+85225728989"><i class="fas fa-phone-alt"></i> +852 2572 8989</a>
-                        <a href="anita@Call-A-Tutor.com"><i class="fa fa-envelope"></i> anita@Call-A-Tutor.com</a>
-                    </div>
-
-                    <div class="top-right ml-auto">
-                        <div class="social-style-one">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        </div>
+                        <a href="callto:+85225728989"><i class="fas fa-phone-alt"></i>+852 2572 8989</a>
+                        <a href="#" class="mr-20"><i class="fab fa-whatsapp"></i>+852 9042 7349</a>
+                        <a href="mailto:anita@Call-A-Tutor.com"><i class="fa fa-envelope"></i>anita@Call-A-Tutor.com</a>
                     </div>
                 </div>
             </div>
@@ -75,6 +102,8 @@
                                             <ul>
                                                 <li><a href="kids.html">Kids</a></li>
                                                 <li><a href="adults.html">Adults</a></li>
+                                                <li><a href="clubs.html">Partnerships with Clubs</a></li>
+                                                <li><a href="eca.html">ECA in Schools</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown"><a href="#">Testimonials</a>
@@ -84,7 +113,7 @@
                                             </ul>
                                         </li>
                                         <li><a href="useful-links.html">Useful Links</a></li>
-                                        <li><a href="contact.html">Contact us</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -99,8 +128,6 @@
         <!--==================================================================== 
                                 End Header area
         =====================================================================-->
-
-
 
         <!--==================================================================== 
                                 Start Banner Area
@@ -135,35 +162,23 @@
                                <span class="sub-title">Contact Us</span>
                                 <h2>Have a Question?</h2>
                             </div>
-                            <div class="row align-items-center justify-text">
-                                <div class="col-lg-10">
-                                    <h4 class="mb-10">We are eager to hear from you, so please fill in an “Enquiry Form”.</h4>
-                                    <p>A reply will be made within 48 hours.</p>
+                            <div class="form-note">
+                                <div class="row align-items-center justify-text">
+                                    <div class="col-lg-10">
+                                        <h4 class="mb-10">We are eager to hear from you, so please fill in our Enquiry Form below.</h4>
+                                        <p>A reply will be made within 48 hours.</p>
+                                        <p>A trial lesson can be arranged within 7 working days.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <form action="https://api.staticforms.xyz/submit" method="post">
-                                <div class="row col-lg-10 clearfix">
-                                    <input type="hidden" name="accessKey" value="05fd5cb8-1f58-42a8-971f-8f931d1eece7">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="text" name="name" class="form-control" value="" required="" placeholder="Your Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input type="email" name="email" class="form-control" value="" required="" placeholder="Enter Your Email">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group mb-50">
-                                            <textarea name="message" class="form-control" rows="7" required="" placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <button type="submit" class="theme-btn">SUBMIT</button>
-                                    </div>
-                                </div>
-                            </form>
+                            
+                            <!-- Google Form Container -->
+                            <div class="google-form-container">
+                                <!-- Replace this iframe with your actual Google Form embed code -->
+                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTNsJJmf-SbU6nVvulfFe6-_9mPnaCM1Z_T9cuJpMt5mkeoA/viewform?embedded=true">
+                                    Loading Google Form...
+                                </iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -181,6 +196,13 @@
                                     <div class="info-content">
                                         <h5>Phone Number</h5>
                                         <span>+852 2572 8989</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fab fa-whatsapp"></i>
+                                    <div class="info-content">
+                                        <h5>WhatsApp</h5>
+                                        <span>+852 9042 7349</span>
                                     </div>
                                 </li>
                                 <li>
@@ -219,7 +241,7 @@
                 <div class="row">
 
                     <!--Footer Column-->
-                        <div class="col-lg-4 col-md-6">
+                      <div class="col-lg-4 col-md-6">
                             <div class="footer-widget logo-widget">
                                 <div class="footer-logo">
                                     <a href="index.html"><img src="assets/images/logo.png" alt="footer logo"></a>
@@ -233,8 +255,9 @@
                             <div class="footer-widget links-widget">
                                 <h4 class="footer-title">Contact Us</h4>
                                 <ul class="list">
-                                    <li>T: +852 2572 8989</li>
-                                    <li>E: anita@Call-A-Tutor.com</li>
+                                    <li>Phone: +852 2572 8989</li>
+                                    <li>WhatsApp: +852 9042 7349</li>
+                                    <li>Email: anita@Call-A-Tutor.com</li>
                                 </ul>
                             </div>
                         </div>
@@ -251,7 +274,7 @@
                                 </ul>
                             </div>
                         </div>
-                </div>
+                    </div>
                 <div class="row">
                     <div class="col-lg-12">
                         <!-- Copyright Area-->
