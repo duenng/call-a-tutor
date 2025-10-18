@@ -901,6 +901,25 @@ input[type="submit"]:focus {
     z-index: 1;
 }
 
+#testimonials-banner:after {
+        display: none; 
+    }
+
+    #testimonials-banner {
+        background-size: contain;  
+        background-repeat: no-repeat;
+    }
+
+    #testimonials-banner {
+        min-height: 550px;  
+        background-color: rgba(240, 240, 240, 0.8); 
+    }
+
+    #testimonials-banner:hover {
+        background-color: transparent;
+        opacity: 1;
+    }
+
 .page-title {
     color: #FFFFFF;
     font-size: 55px;
