@@ -93,7 +93,7 @@ font-family: 'Open Sans', ;*/
 }
 
 body {
-    color: #A9A9A9;
+    color: #7A7A7A; /* Changed from #A9A9A9 to darker gray */
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
@@ -211,7 +211,7 @@ h6 {
 
 /*home page three and four*/
 body.hp-three, body.hp-four {
-    color: #8C8C8C;
+    color: #6E6E6E; /* Changed from #8C8C8C to darker gray */
     font-family: 'Lora', serif;
 }
 
@@ -2135,11 +2135,10 @@ input[type="submit"]:focus {
 }
 
 .feedback-two-item p {
-    color: #747280;
+    color: #5A5A6E; /* Changed from #747280 to darker gray */
     font-size: 22px;
     line-height: 36px;
 }
-
 .feedback-two-client {
     display: flex;
     margin-top: 45px;
@@ -2399,7 +2398,7 @@ input[type="submit"]:focus {
 }
 
 .newsletter-three .subscribe input::placeholder {
-    color: #ECECEC;
+    color: #C9C9C9; /* Changed from #ECECEC to darker gray */
     font-size: 14px;
 }
 
@@ -2731,7 +2730,7 @@ input[type="submit"]:focus {
 }
 
 .feedback-four-wrap .slick-dots button {
-    background: #DFDFEF;
+    background: #BFBFD7; /* Changed from #DFDFEF to darker gray */
 }
 
 .feedback-four-wrap .slick-dots .slick-active button {
@@ -2819,12 +2818,11 @@ input[type="submit"]:focus {
 }
 
 .hero-five-content form input {
-    color: #8C8C8C;
+    color: #6E6E6E; /* Changed from #8C8C8C to darker gray */
     border-radius: 0;
     margin-bottom: 0;
     padding: 10px 25px;
 }
-
 .hero-five-content form button {
     display: flex;
     cursor: pointer;
